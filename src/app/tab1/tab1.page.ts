@@ -1,3 +1,4 @@
+import { DataService } from './../services/data.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,6 +8,12 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+  constructor(private data: DataService) {}
 
+  getMessages() {
+    console.log(this.data.getAllMessages());
+    return this.data.getAllMessages();
+
+  }
+  
 }
