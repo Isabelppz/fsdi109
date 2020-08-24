@@ -6,14 +6,13 @@ import { Component } from '@angular/core';
   templateUrl: 'tab1.page.html',
   styleUrls: ['tab1.page.scss']
 })
+
 export class Tab1Page {
 
   constructor(private data: DataService) {}
 
   getMessages() {
-    console.log(this.data.getAllMessages());
-    return this.data.getAllMessages();
-
+/*     console.log(this.data.getAllMessages());
+ */    return this.data.getAllMessages();
   }
-  
 }
